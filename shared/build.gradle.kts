@@ -3,7 +3,10 @@ import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
+    id("com.chromaticnoise.multiplatform-swiftpackage") version "2.0.3"
 }
+
+version = "1.0.0"
 
 kotlin {
     android()
