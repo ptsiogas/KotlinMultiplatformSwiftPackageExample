@@ -9,6 +9,15 @@ plugins {
 version = "1.0.0"
 
 kotlin {
+    multiplatformSwiftPackage {
+        packageName("KotlinMultiplatformSPExample")
+        swiftToolsVersion("5.3")
+        targetPlatforms {
+            iOS { v("13") }
+        }
+        outputDirectory(File(rootDir, "/"))
+    }
+
     android()
     ios {
         binaries {
